@@ -1,0 +1,170 @@
+
+body {
+    background-image: url(background.gif);
+    background-position: center;
+    color: #f2f2f2;
+}
+
+@font-face {
+    font-family: Starjout;
+    src: url(Starjout.ttf);
+}
+
+h1 {
+  font-family: Starjout;
+  padding-top: 40px;
+  font-size: 70px;
+  text-align: center;
+  color: #f2f2f2;
+  text-shadow: 2px 2px 4px #e6e6e6;
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+
+
+ h4 {
+  text-align: center;
+  padding-top: 7px;
+  margin-bottom: 7px;
+    animation: fadein 8s;
+    -moz-animation: fadein 8s; /* Firefox */
+    -webkit-animation: fadein 8s; /* Safari and Chrome */
+    -o-animation: fadein 8s; /* Opera */
+}
+
+  h5 {
+   text-align: center;
+   padding-top: 7px;
+   margin-bottom: 7px;
+      animation: fadein 8s;
+      -moz-animation: fadein 8s; /* Firefox */
+      -webkit-animation: fadein 8s; /* Safari and Chrome */
+      -o-animation: fadein 8s; /* Opera */
+ }
+
+ #planets {
+     display: grid;
+     grid-template-columns: 25% 25% 25% 25%;
+     grid-template-rows: 50% 50%;
+}
+img {
+    width: 300px;
+    padding: 20px;
+    opacity: 100%;
+}
+
+input, select {
+    min-width: 200px;
+}
+
+.container, .container-fluid {
+    margin-top: 40px;
+    width: 100%;
+    padding-right: auto;
+    padding-left: auto;
+    padding-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.form-group {
+    margin-right: 1rem;
+      animation: fadein 8s;
+      -moz-animation: fadein 8s; /* Firefox */
+      -webkit-animation: fadein 8s; /* Safari and Chrome */
+      -o-animation: fadein 8s; /* Opera */
+}
+
+#planets > div {
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    width: 300px;
+}
+
+#day,
+#month {
+  margin: 40px;
+}
+
+#perspective {
+  margin: 20px 0px 50px 40px;
+  opacity: .8;
+}
+
+#mars:hover,
+#venus:hover,
+#earth:hover,
+#moon:hover,
+#mercury:hover,
+#jupiter:hover,
+#ganymede:hover,
+#io:hover,
+#earth:hover,
+#europa:hover {
+  -webkit-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  transform: scale(1.25);
+}
+
+figcaption {
+    position: relative;
+}
+
+.planet {
+    vertical-align: top;
+}
+
+.planet figcaption {
+  display: none;
+}
+
+.planet:hover figcaption {
+    display: block;
+    text-align: center;
+    margin-top: -100px;
+}
+
+      @keyframes fadein {
+          from {
+              opacity:0;
+          }
+          to {
+              opacity:1;
+          }
+      }
+      @-moz-keyframes fadein { /* Firefox */
+          from {
+              opacity:0;
+          }
+          to {
+              opacity:1;
+          }
+      }
+      @-webkit-keyframes fadein { /* Safari and Chrome */
+          from {
+              opacity:0;
+          }
+          to {
+              opacity:1;
+          }
+      }
+      @-o-keyframes fadein { /* Opera */
+          from {
+              opacity:0;
+          }
+          to {
+              opacity: 1;
+          }
+      }
+    }

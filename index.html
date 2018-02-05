@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>PlanetPix</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>PlanetPix</h1>
+  <h4>Picutres of planets on any date this year</h4>
+  <div class="container">
+    <h5>Please select a date</h5>
+    <div class="row">
+      <div class="span6" style="float: none; margin: 0 auto;">
+        <div class="form-row align-items-center">
+          <select id="month" class="form-group" placeholder="Enter Month" onchange="showAllPlanets()">
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+              </select>
+            <!-- No </div> b/c want day & month in same row -->
+
+          <div class="form-row align-items-center">
+            <select id="day" class="form-group" onchange="showAllPlanets()">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+              </select>
+          </div>
+        </div> <!--end span6-->
+      </div> <!--end row-->
+    </div>
+
+  <div id="planets">
+        <div class="mercury planet">
+          <img id="mercury" src="" class="rounded-circle">
+            <figcaption>MERCURY</figcaption>
+          <div class="loading hide">
+              <i class="fa fa-star fa-pulse fa-3x fa-fw row-align-center"></i>
+              <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+
+        <div class="earth planet">
+            <img id="earth" src="" class="rounded-circle" alt="Planet Earth">
+             <figcaption>EARTH</figcaption>
+             <div class="loading hide">
+                  <i class="fa fa-star fa-pulse fa-3x fa-fw row-align-center"></i>
+                  <span class="sr-only">Loading...</span>
+            </div>
+            <select id="perspective" class="form-group" onchange="showEarth()">
+                <option value="north">North</option>
+                <option value="south">South</option>
+                <option value="east">East</option>
+                <option value="west">West</option>
+            </select>
+          </div>
+
+          <div class="moon planet">
+              <img id="moon" src="" class="rounded-circle">
+              <figcaption class="caption">MOON</figcaption>
+                <div class="loading hide">
+                    <i class="fa fa-star fa-pulse fa-3x fa-fw row-align-center"></i>
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+
+        <div class="venus planet">
+            <img id="venus" src="" class="rounded-circle">
+            <figcaption>VENUS</figcaption>
+              <div class="loading hide">
+                  <i class="fa fa-star fa-pulse fa-3x fa-fw row-align-center"></i>
+                  <span class="sr-only">Loading...</span>
+              </div>
+        </div>
+
+        <div class="mars planet">
+            <img id="mars" src="" class="rounded-circle">
+            <figcaption>MARS</figcaption>
+            <div class="loading hide">
+              <i class="fa fa-star fa-pulse fa-3x fa-fw row-align-center"></i>
+              <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+        <div class="jupiter planet">
+            <img id="jupiter" src="" class="rounded-circle">
+            <figcaption>JUPITER</figcaption>
+            <div class="loading hide">
+              <i class="fa fa-star fa-pulse fa-3x fa-fw row-align-center"></i>
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+        <div class="ganymede planet">
+            <img id="ganymede" src="" class="rounded-circle">
+            <figcaption>GANYMEDE</figcaption>
+            <div class="loading hide">
+                <i class="fa fa-star fa-pulse fa-3x fa-fw row-align-center"></i>
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+        <div class="europa planet">
+            <img id="europa" src="" class="rounded-circle">
+            <figcaption>EUROPA</figcaption>
+            <div class="loading hide">
+              <i class="fa fa-star fa-pulse fa-3x fa-fw row-align-center"></i>
+              <span class="sr-only">Loading...</span>
+           </div>
+        </div>
+
+      </div> <!--end planets -->
+    </div> <!--end container-->
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+
+</html>
