@@ -1,0 +1,80 @@
+
+body {
+	color: #111;
+  font-size: 14px;
+  font-family: "Open Sans", arial, sans-serif;
+  line-height: 1.6;
+	background: #e8e9e9;
+	background: #3db5da;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+ h1, h2, h3 {
+	display: grid;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+	text-shadow: 4px 3px 3px #9E9E9E;
+}
+
+h1 {
+	font-family: 'Indie Flower', cursive;
+	font-size: 4em;
+	text-shadow: 4px 3px 3px #6A676E;
+}
+
+h4 {
+	text-align: right;
+	text-shadow: 3px 2px 3px #8F8F8F;
+}
+
+.container {
+	display: flex;
+	padding: 5px;
+	background: #e8e9e9;
+  border-radius: 3px;
+	margin: 45px auto;
+	margin-bottom: 1px;
+  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+	flex-wrap: wrap;
+}
+
+.item {
+	color: #fff;
+	padding: 15px;
+	margin: 2px;
+	background: #3db5da;
+	border-radius: 3px;
+	flex-basis: 280px;
+	justify-content: center;
+}
+
+.item-2 {
+	margin-right: auto;
+}
+
+.item-6 {
+	margin-left: auto;
+}
+
+
+
+.container {
+  display: flex;
+/* I don't understand why I have to keep this second "constainer",
+but for some reason when I remove it, the container borders get super funky */
+}
+
+.item {
+	flex-grow: 1;
+}
+
+/* For some reason, I cannot center this footer. It's driving me nuts */
+.footer {
+display: flex;
+justify-content: center;
+font-family: 'Indie Flower';
+font-size: 18px;
+align-items: center;
+width:100%;
+}
